@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdallah Law Firm | Legal services with high professionalism</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="main.css" type="text/css">
+
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300 antialiased">
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-navy-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo / Wordmark -->
+            <a href="#home" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-lg bg-navy-900 dark:bg-gold-500 flex items-center justify-center text-white dark:text-navy-900 font-serif font-bold text-xl shadow-lg transition-transform group-hover:scale-105">
+                    A
+                </div>
+                <div>
+                    <span class="text-xl font-serif font-bold tracking-wide block text-navy-900 dark:text-white">Abdallah</span>
+                    <span class="text-xs uppercase tracking-widest text-gold-600 dark:text-gold-400 font-semibold block">Law Firm</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="font-medium hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Home</a>
+                <a href="#about" class="font-medium hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Meet the Lawyer</a>
+                <a href="#expertise" class="font-medium hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Expertise</a>
+                <a href="#articles" class="font-medium hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Articles</a>
+                <a href="#contact" class="font-medium hover:text-gold-600 dark:hover:text-gold-400 transition-colors">Contact Us</a>
+            </nav>
+
+            <!-- Actions: Dark Mode Toggle & CTA Button -->
+            <div class="hidden md:flex items-center space-x-4">
+                <button id="themeToggle" aria-label="Toggle Dark/Light Mode" class="p-2.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:inline"></i>
+                </button>
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold shadow-md transition-all transform hover:-translate-y-0.5">
+                    Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center space-x-3 md:hidden">
+                <button id="themeToggleMobile" aria-label="Toggle Dark/Light Mode" class="p-2.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-yellow-400">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:inline"></i>
+                </button>
+                <button id="mobileMenuBtn" aria-label="Toggle Menu" class="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-6 space-y-3 bg-white dark:bg-navy-900 border-b border-slate-200 dark:border-slate-800 shadow-xl">
+            <a href="#home" class="block py-2 font-medium hover:text-gold-600 dark:hover:text-gold-400 mobile-link">Home</a>
+            <a href="#about" class="block py-2 font-medium hover:text-gold-600 dark:hover:text-gold-400 mobile-link">Meet the Lawyer</a>
+            <a href="#expertise" class="block py-2 font-medium hover:text-gold-600 dark:hover:text-gold-400 mobile-link">Expertise</a>
+            <a href="#articles" class="block py-2 font-medium hover:text-gold-600 dark:hover:text-gold-400 mobile-link">Articles</a>
+            <a href="#contact" class="block py-2 font-medium hover:text-gold-600 dark:hover:text-gold-400 mobile-link">Contact Us</a>
+            <div class="pt-2">
+                <a href="#contact" class="block text-center w-full py-3 rounded-lg bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold shadow-md">
+                    Schedule a Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-navy-900 via-navy-800 to-slate-900 text-white overflow-hidden py-20">
+        <!-- Background decorative pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left fade-in-up">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-sm font-medium">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Premier Legal Counsel in Mauritius</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+                    Defending Your Rights With <span class="text-gold-400 italic">Distinction</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-light">
+                    “Legal services with high professionalism and outstanding results.”
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold shadow-xl transition-all transform hover:-translate-y-1 text-center">
+                        Schedule a Legal Consultation
+                    </a>
+                    <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold backdrop-blur-sm transition-all text-center">
+                        Explore Practice Areas
+                    </a>
+                </div>
+                <!-- Trust Badges -->
+                <div class="pt-8 flex items-center justify-center lg:justify-start space-x-6 text-slate-400 text-sm border-t border-slate-800">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-award text-gold-400 text-lg"></i>
+                        <span>Intl. Bar Society Member</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-shield-halved text-gold-400 text-lg"></i>
+                        <span>200+ Cases Won</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Lawyer Photo Placeholder -->
+            <div class="lg:col-span-5 relative flex justify-center fade-in-up">
+                <div class="relative w-full max-w-md aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-500/30 bg-navy-800">
+                    <img src="close-up-old-person-portrait.jpg" alt="Abdallah Barrister Portrait" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=600'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-transparent to-transparent flex items-end p-6">
+                        <div>
+                            <h3 class="text-xl font-bold font-serif text-white">Abdallah, Esq.</h3>
+                            <p class="text-gold-400 text-sm font-medium">Senior Barrister-at-Law</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating Card -->
+                <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-700 hidden sm:flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-lg bg-gold-500/20 text-gold-500 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold text-slate-900 dark:text-white">Top Rated Legal Expert</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Domestic & International Practice</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Lawyer Section -->
+    <section id="about" class="py-24 bg-white dark:bg-slate-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                <span class="text-gold-600 dark:text-gold-400 font-semibold text-sm uppercase tracking-widest block mb-2">Distinguished Counsel</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 dark:text-white">Meet Barrister Abdallah</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+                <div class="lg:col-span-6 space-y-6 fade-in-up">
+                    <h3 class="text-2xl font-serif font-bold text-slate-900 dark:text-white">Experienced Domestic & International Practice</h3>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        An experienced barrister with domestic and international practice who has appeared before all levels of court. With a meticulous approach to complex litigation and arbitration, Abdallah has successfully represented hundreds of clients across various high-stakes jurisdictions.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Recognized as a regular legal commentator in the media, Abdallah combines sharp analytical legal frameworks with proactive advocacy to secure optimal outcomes for every client.
+                    </p>
+
+                    <!-- Memberships & Highlights -->
+                    <div class="pt-4 space-y-3">
+                        <h4 class="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-xs">Professional Memberships & Media</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3.5 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700 flex items-center space-x-2">
+                                <i class="fa-solid fa-certificate text-gold-500"></i>
+                                <span>International Bar Society</span>
+                            </span>
+                            <span class="px-3.5 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700 flex items-center space-x-2">
+                                <i class="fa-solid fa-certificate text-gold-500"></i>
+                                <span>National Bar Council</span>
+                            </span>
+                            <span class="px-3.5 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700 flex items-center space-x-2">
+                                <i class="fa-solid fa-microphone-lines text-gold-500"></i>
+                                <span>Regular Media Legal Commentator</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animated Counters Grid -->
+                <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 gap-6 fade-in-up">
+                    <div class="bg-slate-50 dark:bg-slate-800/60 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 text-center shadow-lg hover:border-gold-500 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl mx-auto mb-4">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="text-4xl font-bold font-serif text-slate-900 dark:text-white mb-1"><span class="counter" data-target="200">0</span>+</div>
+                        <div class="text-sm text-slate-500 dark:text-slate-400 font-medium">Clients Represented</div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/60 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 text-center shadow-lg hover:border-gold-500 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl mx-auto mb-4">
+                            <i class="fa-solid fa-gavel"></i>
+                        </div>
+                        <div class="text-4xl font-bold font-serif text-slate-900 dark:text-white mb-1"><span class="counter" data-target="200">0</span>+</div>
+                        <div class="text-sm text-slate-500 dark:text-slate-400 font-medium">Litigation Cases</div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/60 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 text-center shadow-lg hover:border-gold-500 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl mx-auto mb-4">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="text-4xl font-bold font-serif text-slate-900 dark:text-white mb-1"><span class="counter" data-target="100">0</span>+</div>
+                        <div class="text-sm text-slate-500 dark:text-slate-400 font-medium">Intl. Arbitrations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section (9 Practice Areas) -->
+    <section id="expertise" class="py-24 bg-slate-100 dark:bg-slate-800/50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                <span class="text-gold-600 dark:text-gold-400 font-semibold text-sm uppercase tracking-widest block mb-2">Comprehensive Legal Solutions</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 dark:text-white">Our Practice Areas</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Grid of 9 Practice Areas -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Practice 1: Family Law -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Family Law</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Compassionate and expert counsel on divorce, child custody, alimony, and domestic settlements with absolute discretion.
+                    </p>
+                </div>
+
+                <!-- Practice 2: Criminal Law -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-scale-unbalanced"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Criminal Law</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Rigorous defense representation across all levels of court, protecting constitutional rights with tactical precision.
+                    </p>
+                </div>
+
+                <!-- Practice 3: Labour/Employment Law -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Labour / Employment Law</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Advising corporations and employees on wrongful termination, workplace disputes, and statutory compliance.
+                    </p>
+                </div>
+
+                <!-- Practice 4: Tenancy and Rental Law -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Tenancy and Rental Law</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Resolving landlord-tenant disputes, lease drafting, evictions, and property rental agreements.
+                    </p>
+                </div>
+
+                <!-- Practice 5: Commercial Law -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Commercial Law</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Strategic advisory for corporate structures, mergers, acquisitions, and regulatory compliance.
+                    </p>
+                </div>
+
+                <!-- Practice 6: Contractual Disputes -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Contractual Disputes</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Litigating breach of contract claims and mitigating financial risks in complex agreements.
+                    </p>
+                </div>
+
+                <!-- Practice 7: Litigation and Arbitration -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Litigation and Arbitration</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Extensive experience handling 200+ litigation cases and 100+ international arbitrations across jurisdictions.
+                    </p>
+                </div>
+
+                <!-- Practice 8: Mediation -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Mediation</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Alternative dispute resolution focused on amicable, cost-effective, and swift out-of-court settlements.
+                    </p>
+                </div>
+
+                <!-- Practice 9: Contract Drafting -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 dark:hover:border-gold-500 transition-all transform hover:-translate-y-1 fade-in-up">
+                    <div class="w-14 h-14 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Contract Drafting</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Drafting airtight, legally sound commercial and personal agreements tailored to mitigate future liabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews / Testimonial Slider Section -->
+    <section class="py-24 bg-white dark:bg-slate-900 transition-colors duration-300 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                <span class="text-gold-600 dark:text-gold-400 font-semibold text-sm uppercase tracking-widest block mb-2">Client Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 dark:text-white">What Our Clients Say</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Testimonial Slider Container -->
+            <div class="relative bg-slate-50 dark:bg-slate-800/80 p-8 sm:p-12 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-xl fade-in-up">
+                <div class="absolute top-6 right-8 text-gold-500/20 text-6xl font-serif">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+
+                <div class="testimonial-slider min-h-[180px] flex flex-col justify-between">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active transition-opacity duration-500">
+                        <div class="flex items-center space-x-1 text-gold-500 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-lg sm:text-xl italic text-slate-700 dark:text-slate-200 mb-6 font-serif">
+                            “Mr. Abdallah provided exceptional counsel during our corporate restructuring. His professionalism, strategic foresight, and dedication resulted in a seamless outcome.”
+                        </p>
+                        <div>
+                            <div class="font-bold text-slate-900 dark:text-white">Jean-Pierre M.</div>
+                            <div class="text-xs text-gold-600 dark:text-gold-400 uppercase tracking-wider font-semibold">[Placeholder Review - Managing Director]</div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide hidden transition-opacity duration-500">
+                        <div class="flex items-center space-x-1 text-gold-500 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-lg sm:text-xl italic text-slate-700 dark:text-slate-200 mb-6 font-serif">
+                            “In handling our complex litigation case, Barrister Abdallah demonstrated unparalleled court acumen and profound knowledge of employment law. Highly recommended.”
+                        </p>
+                        <div>
+                            <div class="font-bold text-slate-900 dark:text-white">Aisha R.</div>
+                            <div class="text-xs text-gold-600 dark:text-gold-400 uppercase tracking-wider font-semibold">[Placeholder Review - Corporate HR Executive]</div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide hidden transition-opacity duration-500">
+                        <div class="flex items-center space-x-1 text-gold-500 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-lg sm:text-xl italic text-slate-700 dark:text-slate-200 mb-6 font-serif">
+                            “Prompt, articulate, and fiercely protective of his clients' interests. His expertise in international arbitration is second to none in Mauritius.”
+                        </p>
+                        <div>
+                            <div class="font-bold text-slate-900 dark:text-white">David L.</div>
+                            <div class="text-xs text-gold-600 dark:text-gold-400 uppercase tracking-wider font-semibold">[Placeholder Review - International Investor]</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="flex items-center justify-between mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
+                    <div class="flex space-x-2" id="sliderDots">
+                        <button class="w-3 h-3 rounded-full bg-gold-500 dot-btn" data-index="0" aria-label="Slide 1"></button>
+                        <button class="w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-600 dot-btn" data-index="1" aria-label="Slide 2"></button>
+                        <button class="w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-600 dot-btn" data-index="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="flex space-x-3">
+                        <button id="prevTestimonial" aria-label="Previous Testimonial" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-gold-500 hover:text-navy-900 transition-colors">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button id="nextTestimonial" aria-label="Next Testimonial" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 hover:bg-gold-500 hover:text-navy-900 transition-colors">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="py-24 bg-slate-100 dark:bg-slate-800/50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                <span class="text-gold-600 dark:text-gold-400 font-semibold text-sm uppercase tracking-widest block mb-2">Legal Insights & News</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 dark:text-white">Latest Articles</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- 3 Placeholder Blog Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 transition-all transform hover:-translate-y-1 flex flex-col fade-in-up">
+                    <div class="h-48 overflow-hidden bg-slate-200 dark:bg-slate-700 relative">
+                        <img src="dictionary-definition-word.jpg" alt="Article 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=600'">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-gold-500 text-navy-900 text-xs font-bold uppercase tracking-wider">Commercial</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 dark:text-slate-500 mb-2 font-medium">October 12, 2026 • 5 min read</div>
+                            <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Navigating Corporate Compliance in Modern Business Jurisdictions</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
+                                An in-depth analysis of evolving statutory requirements and risk mitigation frameworks for companies operating in regional markets.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-gold-600 dark:text-gold-400 font-semibold text-sm hover:underline">
+                            <span>Read Full Article</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 transition-all transform hover:-translate-y-1 flex flex-col fade-in-up">
+                    <div class="h-48 overflow-hidden bg-slate-200 dark:bg-slate-700 relative">
+                        <img src="closeup-business-people-shaking-hands-outdoors.jpg" alt="Article 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=600'">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-gold-500 text-navy-900 text-xs font-bold uppercase tracking-wider">Arbitration</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 dark:text-slate-500 mb-2 font-medium">September 28, 2026 • 4 min read</div>
+                            <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">The Rise of International Arbitration in Cross-Border Disputes</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
+                                Why arbitration remains the preferred mechanism for swift, confidential, and enforceable commercial dispute resolution.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-gold-600 dark:text-gold-400 font-semibold text-sm hover:underline">
+                            <span>Read Full Article</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 hover:border-gold-500 transition-all transform hover:-translate-y-1 flex flex-col fade-in-up">
+                    <div class="h-48 overflow-hidden bg-slate-200 dark:bg-slate-700 relative">
+                        <img src="employment-contract-obligation-terms-agreement-concept (1).jpg" alt="Article 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=600'">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-gold-500 text-navy-900 text-xs font-bold uppercase tracking-wider">Employment</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 dark:text-slate-500 mb-2 font-medium">September 15, 2026 • 6 min read</div>
+                            <h3 class="text-xl font-bold font-serif text-slate-900 dark:text-white mb-3">Understanding Employment Rights and Termination Protocols</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
+                                A comprehensive breakdown of employer and employee obligations under current labour legislation and precedents.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center space-x-2 text-gold-600 dark:text-gold-400 font-semibold text-sm hover:underline">
+                            <span>Read Full Article</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-24 bg-white dark:bg-slate-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-up">
+                <span class="text-gold-600 dark:text-gold-400 font-semibold text-sm uppercase tracking-widest block mb-2">Get in Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 dark:text-white">Schedule a Consultation</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Information & Map -->
+                <div class="lg:col-span-5 space-y-8 fade-in-up">
+                    <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-md space-y-6">
+                        <h3 class="text-2xl font-serif font-bold text-slate-900 dark:text-white">Contact Details</h3>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 dark:text-white">Office Address</div>
+                                <div class="text-slate-600 dark:text-slate-300 text-sm mt-1">1 Example Street, Port Louis, Mauritius</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 dark:text-white">Phone Number</div>
+                                <div class="text-slate-600 dark:text-slate-300 text-sm mt-1">+230 57995620</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center text-xl flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 dark:text-white">Email Address</div>
+                                <div class="text-slate-600 dark:text-slate-300 text-sm mt-1">abdallah@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive / Visual Map Pin (Port Louis / Ebene) -->
+                    <div class="bg-slate-50 dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-md overflow-hidden">
+                        <div class="text-sm font-bold text-slate-900 dark:text-white mb-3 px-2 flex items-center justify-between">
+                            <span>Location Map (Port Louis / Ebene)</span>
+                            <span class="text-xs text-gold-600 dark:text-gold-400"><i class="fa-solid fa-map-pin"></i> Pin Active</span>
+                        </div>
+                        <div class="w-full h-48 rounded-xl overflow-hidden relative bg-slate-200 dark:bg-slate-700 flex items-center justify-center border border-slate-300 dark:border-slate-600">
+                            <!-- Embedded simulated styled map / iframe placeholder -->
+                            <iframe title="Port Louis Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14902.5!2d57.5012!3d-20.1609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c504c55555555%3A0x5555555555555555!2sPort%20Louis%2C%20Mauritius!5e0!3m2!1sen!2smu!4v1690000000000!5m2!1sen!2smu" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="w-full h-full object-cover"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consultation Form with JavaScript Validation -->
+                <div class="lg:col-span-7 fade-in-up">
+                    <form id="consultationForm" novalidate class="bg-slate-50 dark:bg-slate-800 p-8 sm:p-10 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-xl space-y-6 relative">
+                        <div id="formSuccessMessage" class="hidden absolute inset-0 bg-white/95 dark:bg-slate-800/95 z-20 flex flex-col items-center justify-center text-center p-8 rounded-3xl">
+                            <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center text-3xl mb-4">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold font-serif text-slate-900 dark:text-white mb-2">Consultation Requested!</h3>
+                            <p class="text-slate-600 dark:text-slate-300 text-sm max-w-md mb-6">
+                                Thank you for contacting Abdallah Law Firm. Your consultation request has been successfully submitted. We will get back to you shortly.
+                            </p>
+                            <button type="button" id="resetFormBtn" class="px-6 py-2.5 rounded-xl bg-gold-500 text-navy-900 font-semibold hover:bg-gold-600 transition-colors">
+                                Send Another Message
+                            </button>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Full Name -->
+                            <div>
+                                <label for="fullName" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all" placeholder="John Doe">
+                                <span class="error-msg text-red-500 text-xs mt-1 block hidden">Please enter your full name.</span>
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all" placeholder="john@example.com">
+                                <span class="error-msg text-red-500 text-xs mt-1 block hidden">Please enter a valid email address.</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all" placeholder="+230 5xxxxxxx">
+                                <span class="error-msg text-red-500 text-xs mt-1 block hidden">Please enter a valid phone number.</span>
+                            </div>
+
+                            <!-- Practice Area Dropdown -->
+                            <div>
+                                <label for="practiceArea" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Practice Area *</label>
+                                <select id="practiceArea" name="practiceArea" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all">
+                                    <option value="">Select Practice Area</option>
+                                    <option value="Family Law">Family Law</option>
+                                    <option value="Criminal Law">Criminal Law</option>
+                                    <option value="Labour/Employment Law">Labour/Employment Law</option>
+                                    <option value="Tenancy and Rental Law">Tenancy and Rental Law</option>
+                                    <option value="Commercial Law">Commercial Law</option>
+                                    <option value="Contractual Disputes">Contractual Disputes</option>
+                                    <option value="Litigation and Arbitration">Litigation and Arbitration</option>
+                                    <option value="Mediation">Mediation</option>
+                                    <option value="Contract Drafting">Contract Drafting</option>
+                                </select>
+                                <span class="error-msg text-red-500 text-xs mt-1 block hidden">Please select a practice area.</span>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Message / Case Details *</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-gold-500 transition-all resize-none" placeholder="Briefly describe your legal requirements..."></textarea>
+                            <span class="error-msg text-red-500 text-xs mt-1 block hidden">Please enter your message.</span>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="flex items-start space-x-3">
+                            <input type="checkbox" id="consent" name="consent" class="mt-1 w-4 h-4 text-gold-500 rounded border-slate-300 focus:ring-gold-500">
+                            <div>
+                                <label for="consent" class="text-sm text-slate-600 dark:text-slate-300">
+                                    I consent to having this website store my submitted information so they can respond to my inquiry. *
+                                </label>
+                                <span class="error-msg text-red-500 text-xs mt-1 block hidden">You must agree to the consent terms.</span>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+                            <span>Submit Consultation Request</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-lg bg-gold-500 text-navy-900 flex items-center justify-center font-serif font-bold text-xl">
+                            A
+                        </div>
+                        <div>
+                            <span class="text-xl font-serif font-bold tracking-wide block text-white">Abdallah Consultancy Firm</span>
+                            <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold block">www.abdallahlawfirm.com</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+                        Legal services with high professionalism and outstanding results. Providing domestic and international counsel before all levels of court.
+                    </p>
+                </div>
+
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-white font-bold tracking-wider text-sm uppercase">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">Meet the Lawyer</a></li>
+                        <li><a href="#expertise" class="hover:text-gold-400 transition-colors">Expertise</a></li>
+                        <li><a href="#articles" class="hover:text-gold-400 transition-colors">Articles</a></li>
+                        <li><a href="#contact" class="hover:text-gold-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="text-white font-bold tracking-wider text-sm uppercase">Practice Areas</h4>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Family Law</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Criminal Law</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Labour Law</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Tenancy</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Commercial</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Arbitration</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-800 text-slate-300">Mediation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mandatory Footer Disclaimer -->
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500 leading-relaxed max-w-4xl mx-auto">
+                <p class="mb-2">“Information on this website is general in nature and does not constitute legal advice.”</p>
+                <p>&copy; 2026 Abdallah Law Firm (www.abdallahlawfirm.com). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to Top" class="fixed bottom-6 right-6 z-40 p-3.5 rounded-xl bg-gold-500 text-navy-900 shadow-2xl opacity-0 invisible transition-all transform hover:scale-110">
+        <i class="fa-solid fa-arrow-up text-lg font-bold"></i>
+    </button>
+
+</body>
+</html>
